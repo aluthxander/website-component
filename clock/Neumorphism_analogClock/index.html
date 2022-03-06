@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neumorphism Analog Clock</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="clock">
+        <div class="jam">
+            <div class="jm" id="jm"></div>
+        </div>
+        <div class="menit">
+            <div class="mn" id="mn"></div>
+        </div>
+        <div class="detik">
+            <div class="dk" id="dk"></div>
+        </div>
+    </div>
+
+    <script>
+        const deg = 6;
+        const jam = document.querySelector('#jm');
+        const menit = document.querySelector('#mn');
+        const detik = document.querySelector('#dk');
+        setInterval(() => {
+            let hari = new Date();
+            let hh  = hari.getHours()*30;
+            let mm  = hari.getMinutes()*deg;
+            let ss  = hari.getSeconds()*deg;
+    
+            jam.style.transform = `rotateZ(${(hh)+(mm/12)}deg)`;
+            menit.style.transform = `rotateZ(${mm}deg)`;
+            detik.style.transform = `rotateZ(${ss}deg)`;
+        });
+    </script>
+</body>
+</html>

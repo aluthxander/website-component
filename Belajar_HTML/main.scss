@@ -1,0 +1,25 @@
+$myColor: purple;
+header {
+    background-color: aqua;
+    h1 {
+        font-size: 3rem;
+    }
+    p {
+        color: $myColor;
+    }
+}
+
+.kotak {
+    width: 100px;
+    height: 100px;
+    background-color: $myColor;
+    transition: width 1s ease-in, 
+                1s height 2s, 
+                1s background-color 3s;
+}
+
+.kotak:hover {
+    width: 200px;
+    height: 200px;
+    background-color: yellowgreen;
+}

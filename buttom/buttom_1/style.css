@@ -1,0 +1,382 @@
+.container {
+    background-color: #111;
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* button 1 */
+.buttom {
+    overflow: hidden;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttom a {
+    width: 112px;
+    height: 39px;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    background-color: #0077b6;
+    color: #03045e;
+    padding: 10px 20px;
+    position: relative;
+    transition: .5s;
+}
+
+.buttom span {
+    position: absolute;
+    background-color: #1d3557;
+    transition: 1s ease;
+}
+
+.buttom span:nth-child(1) {
+    width: 114px;
+    height: 2px;
+    top: 0;
+    left: -114px;
+}
+
+.buttom span:nth-child(2) {
+    width: 2px;
+    height: 39px;
+    top: -39px;
+    right: 0;
+}
+
+.buttom span:nth-child(3) {
+    width: 114px;
+    height: 2px;
+    bottom: 0;
+    left: 114px;
+}
+
+.buttom span:nth-child(4) {
+    width: 2px;
+    height: 39px;
+    top: 40px;
+    left: 0;
+}
+
+.buttom a:hover {
+    background-color: #01d3fd;
+}
+
+.buttom a:hover span:nth-child(1) {
+    transform: translateX(114px);
+}
+
+.buttom a:hover span:nth-child(2) {
+    transform: translateY(39px);
+}
+
+.buttom a:hover span:nth-child(3) {
+    transform: translateX(-114px);
+}
+
+.buttom a:hover span:nth-child(4) {
+    transform: translateY(-40px);
+}
+
+/* akhir button 1 */
+/* button 2 */
+.button2 {
+    overflow: hidden;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1s;
+}
+
+.button2 a {
+    width: 114px;
+    height: 40px;
+    text-align: center;
+    line-height: 39px;
+    text-decoration: none;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: bold;
+    background-color: #6930c3;
+    color: #72efdd;
+    position: relative;
+    transition: 1s;
+    letter-spacing: 2px;
+}
+
+.button2 span {
+    position: absolute;
+    transition: .3s linear;
+}
+
+.button2 span:nth-child(1) {
+    width: 114px;
+    height: 3px;
+    top: 0;
+    left: -114px;
+    background-image: linear-gradient(90deg, rgba(0, 0, 0, 0), #80ffdb);
+}
+
+.button2 span:nth-child(2) {
+    width: 3px;
+    height: 39px;
+    top: -40px;
+    right: 0;
+    background-image: linear-gradient(rgba(0, 0, 0, 0), #80ffdb);
+}
+
+.button2 span:nth-child(3) {
+    width: 114px;
+    height: 3px;
+    bottom: 0;
+    left: 114px;
+    background-image: linear-gradient(90deg, #80ffdb, rgba(0, 0, 0, 0));
+}
+
+.button2 span:nth-child(4) {
+    width: 3px;
+    height: 39px;
+    top: 40px;
+    left: 0;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0), #80ffdb);
+}
+
+.button2 a:hover span:nth-child(1) {
+    transform: translateX(228px);
+}
+
+.button2 a:hover span:nth-child(2) {
+    transform: translateY(80px);
+    transition-delay: .1s;
+}
+
+.button2 a:hover span:nth-child(3) {
+    transform: translateX(-228px);
+    transition-delay: .2s;
+}
+
+.button2 a:hover span:nth-child(4) {
+    transform: translateY(-80px);
+    transition-delay: .3s;
+}
+
+.button2 a:hover {
+    background-color: #72efdd;
+    color: #6930c3;
+    transition-delay: .4s;
+}
+
+.button2:hover {
+    box-shadow: 0 0 40px #72efdd;
+    transition-delay: .4s;
+}
+
+/* akhir button 2 */
+
+/* button 3 */
+
+.button3 {
+    overflow: hidden;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1s;
+}
+
+.button3 a {
+    width: 114px;
+    height: 40px;
+    text-align: center;
+    line-height: 39px;
+    text-decoration: none;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    color: cyan;
+    position: relative;
+    transition: 1s;
+    letter-spacing: 2px;
+}
+
+.button3 span {
+    position: absolute;
+    transition: .5s;
+}
+
+.button3 span:nth-child(1) {
+    width: 114px;
+    height: 2px;
+    top: 0;
+    left: 114px;
+    background-image: linear-gradient(90deg, rgba(0, 0, 0, 0) 50%, cyan);
+}
+
+.button3 span:nth-child(2) {
+    width: 2px;
+    height: 39px;
+    top: -40px;
+    right: 0;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0) 20%, cyan);
+}
+
+.button3 span:nth-child(3) {
+    width: 114px;
+    height: 2px;
+    bottom: 0;
+    left: -114px;
+    background-image: linear-gradient(90deg, cyan, rgba(0, 0, 0, 0)80%);
+}
+
+.button3 span:nth-child(4) {
+    width: 2px;
+    height: 39px;
+    top: 40px;
+    left: 0;
+    background-image: linear-gradient(rgba(0, 0, 0, 0) 50%, cyan);
+}
+
+.button3 a:hover span:nth-child(1) {
+    transform: translateX(-114px);
+}
+
+.button3 a:hover span:nth-child(2) {
+    transform: translateY(40px);
+}
+
+.button3 a:hover span:nth-child(3) {
+    transform: translateX(114px);
+}
+
+.button3 a:hover span:nth-child(4) {
+    transform: translateY(-40px);
+}
+
+/* akhir button 3 */
+
+/* button 4 */
+
+.button4 {
+    overflow: hidden;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1s;
+}
+
+.button4 a {
+    width: 114px;
+    height: 40px;
+    text-align: center;
+    line-height: 39px;
+    text-decoration: none;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif, Geneva, Tahoma, sans-serif;
+    font-weight: 500;
+    background-color: #ffba08;
+    color: #03071e;
+    position: relative;
+    z-index: 1;
+}
+
+.button4 span {
+    position: absolute;
+    transition: .5s;
+}
+
+.button4 span:nth-child(1) {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    top: -52px;
+    left: -52px;
+    background-color: #d00000;
+    z-index: -1;
+}
+
+.button4 span:nth-child(2) {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    bottom: -60px;
+    right: -60px;
+    background-color: #6a040f;
+    z-index: -2;
+}
+
+.button4 span:nth-child(3) {
+    width: 25px;
+    height: 25px;
+    bottom: -25px;
+    left: 20px;
+    border-radius: 50%;
+    background-color: #dc2f02;
+    z-index: -3;
+}
+
+
+.button4 a:hover span:nth-child(1) {
+    transform: translateX(25px) translateY(25px);
+}
+
+.button4 a:hover span:nth-child(2) {
+    transform: translateX(-33px) translateY(-31px);
+}
+
+.button4 a:hover span:nth-child(3) {
+    transform: translateX(10px) translateY(-12px);
+}
+
+/* akhir button 4 */
+
+/* button 5 */
+
+.button5 a {
+    position: relative;
+    padding: 10px 20px;
+    font-family: sans-serif;
+    border: 2px solid #475a6d;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #111;
+    letter-spacing: 2px;
+    transition: 0.5s;
+    z-index: 1;
+
+}
+
+.button5 a:hover {
+    color: #475a6d;
+}
+
+.button5 a::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #475a6d;
+    z-index: -1;
+    transform-origin: left;
+    transition: transform 0.5s ease;
+    transform: scaleX(1);
+}
+
+a:hover::before {
+    transform-origin: right;
+    transition: transform 0.5s ease;
+    transform: scaleX(0);
+}
+
+/* akhir button 5 */

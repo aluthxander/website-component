@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drag Element</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <article>
+        <header></header>
+        <main>
+            <h1>This Is Body</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab sapiente eos deleniti aut impedit, ut
+                similique ipsam quas illo accusantium beatae quibusdam neque repellendus? Sequi eligendi ut distinctio
+                ea, in officiis ullam sapiente ab quam, praesentium vero sunt necessitatibus accusamus delectus, ipsa
+                pariatur cumque. Facere repellendus est laborum autem qui?</p>
+        </main>
+    </article>
+
+    <script>
+        const article = document.querySelector('article');
+
+        article.addEventListener('mousedown', ()=>{
+            article.addEventListener('mousemove', update);
+            window.addEventListener('mouseup', ()=>{
+                article.removeEventListener('mousemove', update);
+            });
+        });
+
+        function update(event) {
+            const xPos = event.clientX-(article.offsetWidth/2);
+            const yPos = event.clientY-(article.offsetHeight/2);
+            article.style.left = xPos+'px';
+            article.style.top = yPos+'px';        
+        }
+    </script>
+</body>
+
+</html>

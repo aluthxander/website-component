@@ -1,0 +1,67 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #edeeed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.bubles {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.buble {
+  height: 150px;
+  width: 150px;
+  background-color: transparent;
+  border-radius: 59% 41% 31% 69% / 29% 54% 46% 71%;
+  position: absolute;
+  box-shadow: inset 10px 10px 10px rgba(0, 0, 0, .05),
+              15px 25px 10px rgba(0, 0, 0, .1),
+              15px 20px 20px rgba(0, 0, 0, .05),
+              inset -10px -10px 15px rgba(255, 255, 255, .9);
+}
+
+.buble::before {
+  content: '';
+  position: absolute;
+  top: 25px;
+  left: 35px;
+  background-color: #fff;
+  width: 20px;
+  height: 20px;
+  border-radius: 35% 65% 51% 49% / 56% 64% 36% 44%;
+}
+
+.buble::after{
+  content: '';
+  position: absolute;
+  top: 25px;
+  left: 65px;
+  background-color: #fff;
+  width: 10px;
+  height: 10px;
+  border-radius: 76% 24% 45% 55% / 73% 28% 72% 27%;
+}
+
+.buble:nth-child(2){
+  transform: scale(.5) translate(-200px, 180px);
+  border-radius: 26% 74% 52% 48% / 37% 66% 34% 63%;
+}
+.buble:nth-child(3){
+  transform: scale(.5) translate(280px, 10px);
+  border-radius: 53% 47% 46% 54% / 49% 16% 84% 51%;
+}
+.buble:nth-child(4){
+  transform: scale(.35) translate(120px, -350px);
+  border-radius: 33% 67% 45% 55% / 49% 59% 41% 51%;
+}

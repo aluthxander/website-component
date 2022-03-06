@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+:root {
+    --warna-bg: #219ebc;
+    --warna-card: #8ecae6;
+    --warna-icon: #fff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+.container {
+    min-height: 100vh;
+    background-color: var(--warna-bg);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    max-width: 350px;
+    min-height: 250px;
+    background-color: var(--warna-card);
+    border-radius: 16px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    color: var(--warna-prime);
+}
+
+.card .icon {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    transition: .5s;
+    top: 0;
+    bottom: 0;
+}
+
+.card.one .icon {
+    background-color: #001d3d;
+}
+
+.card.two .icon {
+    background-color: #e36414;
+}
+
+.card.three .icon {
+    background-color: #9a031e;
+}
+
+.card.four .icon {
+    background-color: #5f0f40;
+}
+
+.card.five .icon {
+    background-color: #007f5f;
+}
+
+.card.six .icon {
+    background-color: #3c096c;
+}
+
+.card .icon i {
+    font-size: 76px;
+    margin: auto;
+    color: #fff;
+    transition: .5s;
+}
+
+.card:hover .icon {
+    width: 68px;
+    height: 68px;
+    top: 20px;
+    left: auto;
+    right: auto;
+    border-radius: 50%;
+    margin-bottom: 16px;
+}
+
+.card:hover .icon i {
+    font-size: 36px;
+}
+
+.card .title {
+    font-size: 20px;
+    text-transform: capitalize;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.card p {
+    text-align: center;
+    line-height: 24px;
+    margin-bottom: 16px;
+}
+
+@media (max-width: 1080px) {
+    .container {
+        padding-top: 38px;
+    }
+
+    .card {
+        margin-bottom: 38px;
+    }
+}

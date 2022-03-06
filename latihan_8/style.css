@@ -1,0 +1,12 @@
+.container {
+	width: 1200px;
+	height: 800px;
+	background-image: url(img/background.jpg);
+	background-repeat: no-repeat;
+	margin: 40px auto;
+	font-size: 100px;
+	text-align: center;
+	line-height: 400px;
+	font-family: calibri;
+	color: grey;
+}
